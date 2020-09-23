@@ -1,3 +1,15 @@
 {
-  "extends": ["xo", "xo-react/space"]
+  "extends": ["xo", "xo-typescript/space", "xo-react/space"],
+  "rules": {
+    "@typescript-eslint/semi": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "react/jsx-tag-spacing": ["off"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ]
+  }
 }
