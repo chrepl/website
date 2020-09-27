@@ -1,0 +1,16 @@
+semi: false
+singleQuote: true
+printWidth: 90
+tabWidth: 4
+useTabs: false
+bracketSpacing: true
+jsxBracketSameLine: false
+endOfLine: lf
+trailingComma: none
+overrides:
+  - files:
+      - '*.json'
+      - '*.css'
+      - '*.yml'
+    options:
+      tabWidth: 2
