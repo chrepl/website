@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test:watch": "yarn test --watch",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write **.ts{,x} **.js{,on} **.yml",
     "format:check": "prettier --check **.ts{,x} **.js{,on} **.yml",
@@ -42,8 +42,8 @@
     "jest": "^26.4.2",
     "lint-staged": ">=10",
     "prettier": "^2.1.2",
-    "react-test-renderer": "^16.13.1",
     "sinon": "^9.0.3",
+    "snapshot-diff": "^0.8.1",
     "ts-jest": "^26.4.0",
     "typescript": "^4.0.3",
     "xo": "^0.33.1"

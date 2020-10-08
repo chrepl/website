@@ -2,7 +2,8 @@ module.exports = {
     extends: ['xo-react/space', 'plugin:jest/recommended'],
     prettier: true,
     rules: {
-        'import/no-anonymous-default-export': 'off'
+        'import/no-anonymous-default-export': 'off',
+        'jest/no-large-snapshots': ['warn', { maxSize: 20, inlineMaxSize: 8 }]
     },
     overrides: [
         {
