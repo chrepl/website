@@ -24,7 +24,8 @@ module.exports = {
         {
             files: ['**.tsx', '**.ts'],
             rules: {
-                '@typescript-eslint/no-unused-vars': 'warn'
+                '@typescript-eslint/no-unused-vars': 'warn',
+                'import/no-unassigned-import': 'off'
             }
         }
     ]
