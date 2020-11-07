@@ -6,16 +6,17 @@
   "repository": "https://github.com/chrepl/website",
   "author": "chrepl <chrepl@chrepl.me>",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "test": "jest --coverage",
-    "test:watch": "yarn test --watch",
-    "type-check": "tsc --pretty --noEmit",
+    "cm": "cz",
+    "dev": "next dev",
     "format": "prettier --write **.ts{,x} **.js{,on} **.yml",
     "format:check": "prettier --check **.ts{,x} **.js{,on} **.yml",
     "lint": "xo",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "start": "next start",
+    "test": "jest --coverage",
+    "test:watch": "yarn test --watch",
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "next": "9.5.3",
@@ -33,6 +34,7 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
+    "commitizen": "^4.2.2",
     "eslint": "^7.9.0",
     "eslint-config-xo-react": "^0.23.0",
     "eslint-config-xo-typescript": "^0.33.0",
@@ -54,10 +56,16 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {
     "*.{js,ts{,x},css,md}": "yarn lint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
