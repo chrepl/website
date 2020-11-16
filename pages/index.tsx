@@ -16,10 +16,11 @@ const HomePage: React.FC = () => (
                 Hi 👋 I&apos;m <a>chrepl</a>, but my real name is <a>Alper</a>.{' '}
                 <span className={styles.title__description}>
                     Here, I share through my writing my experience as a{' '}
-                    <a>Full-Stack Software Engineer</a> and everything I&apos;m learning
-                    about on <code className={styles.code}>React</code>,{' '}
-                    <code className={styles.code}>TypeScript</code>, and{' '}
-                    <code className={styles.code}>Testing</code>.
+                    <a>Senior Full-Stack Software Engineer</a> and everything I&apos;m
+                    learning about. My Development Stacks are <a>Web Development</a>,{' '}
+                    <br />
+                    <a>Site Reliability Engineering</a>, and{' '}
+                    <a>Reverse Engineering / Security</a>.
                 </span>
             </h1>
         </main>
