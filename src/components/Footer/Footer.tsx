@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className={styles.footer__wrapper}>
                     <span className={styles.footer__copyright}>
-                        © 2020 Alper Merdeşe. Made with ❤️ and{' '}
+                        © 2021 chrepl. Made with ❤️{' '}
                         <a
                             href="https://nextjs.org"
                             target="_blank"
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                         >
                             Next.js
                         </a>{' '}
-                        in{' '}
+                        and{' '}
                         <a
                             href="https://reactjs.org/"
                             target="_blank"
